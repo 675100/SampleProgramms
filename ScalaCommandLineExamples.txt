@@ -1,0 +1,9 @@
+#scala Command Line Examples
+#configuration:
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+
+val conf = new sparkconf().setAppName().setMaster()
+val sc   = new sparkContext(conf)
+val file = sc.textfile("/path/input.txt")
+
